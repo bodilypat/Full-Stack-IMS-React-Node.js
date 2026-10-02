@@ -1,1 +1,25 @@
-File: #src/features/auth/utils/password.js
+/* ****************************************** */
+/* File: #src/features/auth/utils/password.js */ 
+/* ****************************************** */
+
+const bcrypt = require('bcrypt');
+
+const SALT_ROUNDS = 12;
+
+async function hashPassword(password) {
+	if (typeof password !== 'string' || password.length === 0) {
+		throw new TypeError('Password must be a non-empty string');
+	}
+
+	return bcrypt.hash(password, SALT_ROUNDS);
+}
+
+async function verifyPassword(password, passwordHash) {
+	if (typeof password !== 'string' || typeof passwordHash !== 'string') {
+		return false;
+	}
+
+	return bcrypt.compare(password, passwordHash);
+}
+
+module.exports = { hashPassword, verifyPassword };
