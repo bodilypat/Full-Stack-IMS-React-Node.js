@@ -1,29 +1,38 @@
-//src/config/env.js 
+/************************ 
+** File: src/config/env.js
+**  NODE_ENV
+**  PORT
+**  MONGO_URI
+**  JWT_SECRET
+**  JWT_EXPIRES_IN
+**  CLIENT_URL
+*/
+
 import dotenv from "dotenv";
 
 dotenv.config();
 
-/* Environment configuration object
-*  Acts as a single source of true 
-*/
-
-export const env = {
-    PORT: process.env.PORT,
-    NODE_ENV: process.env.NODE_ENV || "development",
-
-    MONGO_URI: process.env.MONGO_URI,
-    DB_NAME: process.env.JWT_EXPIRES_IN || "7d",
-
-    CLIENT_URL: process.env.CLIENT_URL || "*"
+const getNumber = (value, fallback) => {
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : fallback;
 };
 
-/* Optional: Validate critical env variables */
-const requireVars = ["MONGO_URI", "JWT_SECRET"];
+export const env = {
+  NODE_ENV: process.env.NODE_ENV || "development",
+  PORT: getNumber(process.env.PORT, 5000),
+  MONGO_URI: process.env.MONGO_URI || "",
+  JWT_SECRET: process.env.JWT_SECRET || "",
+  JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN || "7d",
+  CLIENT_URL: process.env.CLIENT_URL || "http://localhost:3000"
+};
 
-requiredVars.forEach((key) => {
-    if (!process.env[key]) {
-        console.error(` Missing environment variable: ${key}`);
-        process.exit(1);
-    }
-});
+const requiredVars = ["MONGO_URI", "JWT_SECRET"];
+
+for (const key of requiredVars) {
+  if (!env[key]) {
+    throw new Error(`Missing required environment variable: ${key}`);
+  }
+}
+
+export default env;
 

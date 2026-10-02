@@ -1,9 +1,5 @@
-//src/config/index.js 
-import connectDB from "./db.js";
-import { env } from "./env.js";
-
-export {
-    connectDB,
-    env 
-};
+/* File: #src/config/index.js */
+export { default as config } from "./env.js";
+export { default as prisma } from "./database.js";
+export { default as logger } from "./logger.js";
 
