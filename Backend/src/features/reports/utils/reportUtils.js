@@ -1,4 +1,6 @@
+/* ************************************************ */
 /* File: #src/features/reports/utils/reportUtils.js */
+/* ************************************************ */
 
 const toNumber = (value, fallback = 0) => {
 	const number = Number(value);
