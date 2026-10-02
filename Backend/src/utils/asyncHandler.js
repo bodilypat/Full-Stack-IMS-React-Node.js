@@ -1,13 +1,16 @@
-//src/utils/asyncHandler.js    
-export const getProduct = async (req, res) => {
-    try {
-        const products = await Product.find();
+/* src/utils/asyncHandler.js */
 
-        res.json(products);
-    } catch (error) {
-        res.status(500).json({
-            message: error.message 
-        });
-    }
-};
+/** Wrap an async Express handler and forward rejected promises to error middleware. */
 
+export const asyncHandler = (handler) => (req, res, next) =>
+  Promise.resolve(handler(req, res, next)).catch(next);
+
+export const getProducts = asyncHandler(async (_req, res) => {
+  const products = await productService.getProducts();
+
+  return successResponse(
+    res,
+    products,
+    "Products retrieved successfully"
+  );
+});
