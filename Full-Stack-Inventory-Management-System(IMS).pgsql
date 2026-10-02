@@ -42,35 +42,35 @@ Full-Stack-Inventory-Management-System(IMS)
 │   │   │       └── ConfirmDialog.jsx
 │   │   │  
 │   │   ├── features/                                       
-│   │   │   ├── auth/ 
+│   │   │      ├── auth/ 
 │   │   │  	│	├── components/                         
 │   │   │  	│	│   ├── LoginForm.jsx
 │   │   │  	│	│   ├── RegisterForm.jsx 
 │   │   │  	│	│   ├── ForgotPasswordForm.jsx 
 │   │   │  	│	│   ├── ResetPasswordForm.jsx 
-│   │   │   │   │   └── ProtectedRoute.jsx 
+│   │   │      │    │   └── ProtectedRoute.jsx 
 │   │   │  	│	├── pages/                               
 │   │   │  	│	│   ├── Login.jsx 
 │   │   │  	│	│   ├── Register.jsx 
 │   │   │  	│	│   ├── ForgotPassword.jsx 
-│   │   │   │   │   └── ResetPassword.jsx 
+│   │   │      │    │   └── ResetPassword.jsx 
 │   │   │  	│	├── hooks/                               
-│   │   │   │   │   └── useAuth.jsx
+│   │   │      │    │   └── useAuth.jsx
 │   │   │  	│	├── context/                             
-│   │   │   │   │   └── index.js
+│   │   │      │    │   └── index.js
 │   │   │  	│	├── services/                            
-│   │   │   │   │   └── authService.js 
+│   │   │      │    │   └── authService.js 
 │   │   │  	│	├── utils/                               
 │   │   │  	│	│   ├── authHelpers.js
 │   │   │  	│	│   ├── authValidators.js
 │   │   │  	│	│   ├── authMapper.js 
 │   │   │  	│	│   ├── authStorage.js
-│   │   │   │   │   └── index.js
+│   │   │      │    │   └── index.js
 │   │   │  	│	├── validation/                              
-│   │   │   │   │   └── authValidation.js
-│   │   │   │   └── index.js
-│   │   │   │
-│   │   │   ├── dashboard/ 
+│   │   │      │    │   └── authValidation.js
+│   │   │      │    └── index.js
+│   │   │      │
+│   │   │      ├── dashboard/ 
 │   │   │  	│	├── components/                         
 │   │   │  	│	│   ├── StateCard.jsx
 │   │   │  	│	│   ├── SalesChart.jsx 
@@ -78,18 +78,18 @@ Full-Stack-Inventory-Management-System(IMS)
 │   │   │  	│	│   ├── LowStockList.jsx 
 │   │   │  	│	│   ├── RecentTransactions.jsx
 │   │   │  	│	│   ├── RecentSales.jsx
-│   │   │   │   │   └── TopProducts.jsx 
+│   │   │      │    │   └── TopProducts.jsx 
 │   │   │  	│	├── pages/                               
-│   │   │   │   │   └── Dashboard.jsx 
+│   │   │      │    │   └── Dashboard.jsx 
 │   │   │  	│	├── hooks/                               
-│   │   │   │   │   └── useDashboard.jsx
+│   │   │      │    │   └── useDashboard.jsx
 │   │   │  	│	├── services/                            
-│   │   │   │   │   └── dashboardService.js 
+│   │   │      │    │   └── dashboardService.js 
 │   │   │  	│	├── utils/                               
-│   │   │   │   │   └── udashboardUtils.js 
-│   │   │   │   └── index.js
-│   │   │   │
-│   │   │   ├── products/ 
+│   │   │      │    │   └── udashboardUtils.js 
+│   │   │      │    └── index.js
+│   │   │      │
+│   │   │      ├── products/ 
 │   │   │  	│	├── components/                         
 │   │   │  	│	│   ├── ProductTable.jsx
 │   │   │  	│	│   ├── ProductForm.jsx 
@@ -98,23 +98,23 @@ Full-Stack-Inventory-Management-System(IMS)
 │   │   │  	│	│   ├── ProductSearch.jsx
 │   │   │  	│	│   ├── ProductFilters.jsx
 │   │   │  	│	│   ├── ProductStatus.jsx
-│   │   │   │   │   └── ProductDeleteDialog.jsx 
+│   │   │      │    │   └── ProductDeleteDialog.jsx 
 │   │   │  	│	├── pages/                               
 │   │   │  	│	│   ├── Products.jsx 
 │   │   │  	│	│   ├── AddProduct.jsx 
 │   │   │  	│	│   ├── EditProduct.jsx 
-│   │   │   │   │   └── ProductView.jsx 
+│   │   │      │    │   └── ProductView.jsx 
 │   │   │  	│	├── hooks/                               
-│   │   │   │   │   └── useProducts.js
+│   │   │      │    │   └── useProducts.js
 │   │   │  	│	├── services/                            
-│   │   │   │   │   └── productService.js 
+│   │   │      │    │   └── productService.js 
 │   │   │  	│	├── validation/                               
-│   │   │   │   │   └── productValidation.js 
+│   │   │      │    │   └── productValidation.js 
 │   │   │  	│	├── utils/                              
-│   │   │   │   │   └── productUtils.js
-│   │   │   │   └── index.js
-│   │   │   │
-│   │   │   ├── suppliers/ 
+│   │   │      │    │   └── productUtils.js
+│   │   │      │    └── index.js
+│   │   │      │
+│   │   │      ├── suppliers/ 
 │   │   │  	│	├── components/                         
 │   │   │  	│	│   ├── SupplierTable.jsx
 │   │   │  	│	│   ├── SupplierForm.jsx 
@@ -126,25 +126,25 @@ Full-Stack-Inventory-Management-System(IMS)
 │   │   │  	│	│   ├── SupplierProducts.jsx
 │   │   │  	│	│   ├── SupplierPurchaseHistory.jsx
 │   │   │  	│	│   ├── SupplierPaymentInfo.jsx
-│   │   │   │   │   └── SupplierDeleteDialog.jsx 
+│   │   │      │    │   └── SupplierDeleteDialog.jsx 
 │   │   │  	│	├── pages/                               
 │   │   │  	│	│   ├── Suppliers.jsx 
 │   │   │  	│	│   ├── AddSupplier.jsx 
 │   │   │  	│	│   ├── EditSupplier.jsx 
 │   │   │  	│	│   ├── SupplierView.jsx 
 │   │   │  	│	│   ├── SupplierProductsPage.jsx
-│   │   │   │   │   └── SupplierHistory.jsx 
+│   │   │      │    │   └── SupplierHistory.jsx 
 │   │   │  	│	├── hooks/                               
-│   │   │   │   │   └── useSuppliers.js
+│   │   │      │    │   └── useSuppliers.js
 │   │   │  	│	├── services/                            
-│   │   │   │   │   └── supplierService.js 
+│   │   │      │    │   └── supplierService.js 
 │   │   │  	│	├── validation/                               
-│   │   │   │   │   └── supplierValidation.js 
+│   │   │      │    │   └── supplierValidation.js 
 │   │   │  	│	├── utils/                              
-│   │   │   │   │   └── supplierUtils.js
-│   │   │   │   └── index.js
-│   │   │   │
-│   │   │   ├── inventory/ 
+│   │   │      │    │   └── supplierUtils.js
+│   │   │      │    └── index.js
+│   │   │      │
+│   │   │      ├── inventory/ 
 │   │   │  	│	├── components/                         
 │   │   │  	│	│   ├── InventoryTable.jsx
 │   │   │  	│	│   ├── InventoryCard.jsx 
@@ -156,23 +156,23 @@ Full-Stack-Inventory-Management-System(IMS)
 │   │   │  	│	│   ├── InventoryFilters.jsx
 │   │   │  	│	│   ├── InventorySearch.jsx
 │   │   │  	│	│   ├── LowStockAlert.jsx
-│   │   │   │   │   └── TransactionHistory.jsx 
+│   │   │      │    │   └── TransactionHistory.jsx 
 │   │   │  	│	├── pages/                               
 │   │   │  	│	│   ├── Inventory.jsx 
 │   │   │  	│	│   ├── StockIn.jsx 
 │   │   │  	│	│   ├── StockOut.jsx 
 │   │   │  	│	│   ├── StockAdjustment.jsx 
 │   │   │  	│	│   ├── StockTransfer.jsx 
-│   │   │   │   │   └── InventoryHistory.jsx 
+│   │   │      │    │   └── InventoryHistory.jsx 
 │   │   │  	│	├── hooks/                               
-│   │   │   │   │   └── useInventory.js 
+│   │   │      │    │   └── useInventory.js 
 │   │   │  	│	├── services/                            
-│   │   │   │   │   └── inventoryService.js 
+│   │   │      │    │   └── inventoryService.js 
 │   │   │  	│	├── utils/                              
-│   │   │   │   │   └── inventoryUtils.js
-│   │   │   │   └── index.js
-│   │   │   │
-│   │   │   ├── purchases/ 
+│   │   │      │    │   └── inventoryUtils.js
+│   │   │      │    └── index.js
+│   │   │      │
+│   │   │      ├── purchases/ 
 │   │   │  	│	├── components/                         
 │   │   │  	│	│   ├── PurchaseTable.jsx
 │   │   │  	│	│   ├── PurchaseForm.jsx 
@@ -184,26 +184,26 @@ Full-Stack-Inventory-Management-System(IMS)
 │   │   │  	│	│   ├── PaymentStatus.jsx
 │   │   │  	│	│   ├── ReceivePurchaseForm.jsx
 │   │   │  	│	│   ├── PurchaseFilters.jsx
-│   │   │   │   │   └── PurchaseDeleteDialog.jsx 
-│   │   │   │   │
+│   │   │      │    │   └── PurchaseDeleteDialog.jsx 
+│   │   │      │    │
 │   │   │  	│	├── pages/                               
 │   │   │  	│	│   ├── Purchase.jsx 
 │   │   │  	│	│   ├── CreatePurchase.jsx 
 │   │   │  	│	│   ├── EditPurchase.jsx 
 │   │   │  	│	│   ├── PurchaseView.jsx  
-│   │   │   │   │   └── ReceivePurchase.jsx 
-│   │   │   │   │
+│   │   │      │    │   └── ReceivePurchase.jsx 
+│   │   │      │    │
 │   │   │  	│	├── hooks/                               
-│   │   │   │   │   └── usePurchases.js 
+│   │   │      │    │   └── usePurchases.js 
 │   │   │  	│	├── services/                            
-│   │   │   │   │   └── purchaseService.js
+│   │   │      │    │   └── purchaseService.js
 │   │   │  	│	├── validation/                            
-│   │   │   │   │   └── purchaseValidation.js 
+│   │   │      │    │   └── purchaseValidation.js 
 │   │   │  	│	├── utils/                              
-│   │   │   │   │   └── purchaseUtils.js
-│   │   │   │   └── index.js
-│   │   │   │
-│   │   │   ├── sales/ 
+│   │   │      │    │   └── purchaseUtils.js
+│   │   │      │    └── index.js
+│   │   │      │
+│   │   │      ├── sales/ 
 │   │   │  	│	├── components/                         
 │   │   │  	│	│   ├── SalesTable.jsx
 │   │   │  	│	│   ├── SalesForm.jsx 
@@ -217,25 +217,25 @@ Full-Stack-Inventory-Management-System(IMS)
 │   │   │  	│	│   ├── PaymentForm.jsx
 │   │   │  	│	│   ├── InvoicePreview.jsx
 │   │   │  	│	│   ├── SalesFilters.jsx 
-│   │   │   │   │   └── SalesDeleteDialog.jsx  
+│   │   │      │    │   └── SalesDeleteDialog.jsx  
 │   │   │  	│	├── pages/                               
 │   │   │  	│	│   ├── Sales.jsx 
 │   │   │  	│	│   ├── CreateSale.jsx 
 │   │   │  	│	│   ├── EditSale.jsx 
 │   │   │  	│	│   ├── SaleView.jsx 
 │   │   │  	│	│   ├── Invoice.jsx 
-│   │   │   │   │   └── Payments.jsx 
+│   │   │      │    │   └── Payments.jsx 
 │   │   │  	│	├── hooks/                               
-│   │   │   │   │   └── useSales.js 
+│   │   │      │    │   └── useSales.js 
 │   │   │  	│	├── services/                            
-│   │   │   │   │   └── salesService.js 
+│   │   │      │    │   └── salesService.js 
 │   │   │  	│	├── validation/                              
-│   │   │   │   │   └── salesValidation.js
+│   │   │      │    │   └── salesValidation.js
 │   │   │  	│	├── utils/                              
-│   │   │   │   │   └── salesUtils.js
-│   │   │   │   └── index.js
-│   │   │   │
-│   │   │   ├── reports/ 
+│   │   │      │    │   └── salesUtils.js
+│   │   │      │    └── index.js
+│   │   │      │
+│   │   │      ├── reports/ 
 │   │   │  	│	├── components/                         
 │   │   │  	│	│   ├── ReportCard.jsx
 │   │   │  	│	│   ├── ReportHeader.jsx 
@@ -248,8 +248,8 @@ Full-Stack-Inventory-Management-System(IMS)
 │   │   │  	│	│   ├── StockMovementChart.jsx
 │   │   │  	│	│   ├── ReportTable.jsx
 │   │   │  	│	│   ├── ReportSummary.jsx 
-│   │   │   │   │   └── TransactionHistory.jsx 
-│   │   │   │   │
+│   │   │      │    │   └── TransactionHistory.jsx 
+│   │   │      │    │
 │   │   │  	│	├── pages/                               
 │   │   │  	│	│   ├── Reports.jsx 
 │   │   │  	│	│   ├── SalesReport.jsx 
@@ -257,17 +257,17 @@ Full-Stack-Inventory-Management-System(IMS)
 │   │   │  	│	│   ├── InventoryReport.jsx 
 │   │   │  	│	│   ├── ProfileReport.jsx 
 │   │   │  	│	│   ├── StockMovementReport.jsx
-│   │   │   │   │   └── ProductPerformanceReport.jsx 
-│   │   │   │   │
-│   │   │  	│	├── hooks/                               
-│   │   │   │   │   └── useReports.js 
-│   │   │  	│	├── services/                            
-│   │   │   │   │   └── reportService.js 
-│   │   │  	│	├── utils/                              
-│   │   │   │   │   └── reportUtils.js
-│   │   │   │   └── index.js
-│   │   │   │
-│   │   │   └── users/
+│   │   │      │    │   └── ProductPerformanceReport.jsx 
+│   │   │      │    │
+│   │   │      │	├── hooks/                               
+│   │   │      │    │   └── useReports.js 
+│   │   │      │    ├── services/                            
+│   │   │      │    │   └── reportService.js 
+│   │   │      │	├── utils/                              
+│   │   │      │    │   └── reportUtils.js
+│   │   │      │    └── index.js
+│   │   │      │
+│   │   │      └── users/
 │   │   │  		├── components/                         
 │   │   │  		│   ├── UserTable.jsx
 │   │   │  		│   ├── UserForm.jsx 
@@ -279,21 +279,21 @@ Full-Stack-Inventory-Management-System(IMS)
 │   │   │  		│   ├── UserSearch.jsx
 │   │   │  		│   ├── ChangePasswordForm.jsx
 │   │   │  		│   ├── UserActivity.jsx
-│   │   │       │   └── UserDeleteDialog.jsx 
+│   │   │           │   └── UserDeleteDialog.jsx 
 │   │   │  		├── pages/                               
 │   │   │  		│   ├── Users.jsx 
 │   │   │  		│   ├── AddUser.jsx 
 │   │   │  		│   ├── EditUser.jsx 
 │   │   │  		│   ├── UserView.jsx 
 │   │   │  		│   ├── Roles.jsx 
-│   │   │       │   └── UserProfile.jsx 
+│   │   │           │   └── UserProfile.jsx 
 │   │   │  		├── hooks/                               
-│   │   │       │   └── useUsers.js 
+│   │   │           │   └── useUsers.js 
 │   │   │  		├── services/                            
-│   │   │       │   └── userService.js 
+│   │   │           │   └── userService.js 
 │   │   │  		├── utils/                              
-│   │   │       │   └── userUtils.js
-│   │   │       └── index.js
+│   │   │           │   └── userUtils.js
+│   │   │           └── index.js
 │   │   │
 │   │   ├── hooks/                                       
 │   │   │   ├── useDebounce.js                              
